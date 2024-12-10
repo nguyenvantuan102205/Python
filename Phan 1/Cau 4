@@ -1,0 +1,24 @@
+import math
+a=int(input())
+b=int(input())
+c=int(input())
+delta=b*b-4*a*c
+if(a!=0):
+    if(delta>0):
+        print("x1={0}".format((-b+math.sqrt(delta))/(4*a)))
+        print("x2={0}".format((-b-math.sqrt(delta))/(4*a)))
+    elif(delta==0):
+        print("x={0}".format(-b/(2*a)))
+    else:
+        print("VN")
+else:
+    if(b!=0):
+        if(c!=0):
+            print("x={0}".format(-c/b))
+        else:
+            print("VN")
+    else:
+        if(c==0):
+            print("VSN")
+        else:
+            print("VN")
