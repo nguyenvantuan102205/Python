@@ -1,0 +1,12 @@
+import math
+n=0
+k=1
+p=0
+while(p<=1000):
+    p+=k
+    k+=1
+n=p
+s=0
+for i in range(0,n):
+    s+=1/(math.factorial(2*i+1))
+print(s)
