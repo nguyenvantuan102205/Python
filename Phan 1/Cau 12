@@ -1,0 +1,6 @@
+import math
+n=int(input())
+s=0
+for i in range(0,n):
+    s+=math.factorial(2*i+1)
+print(s)
