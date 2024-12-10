@@ -1,9 +1,0 @@
-import math
-a=float(input())
-if(a>0 and a<0.01):
-    s=0
-    k=0
-    while(s<a):
-        s+=1/(math.factorial(2*k+1))
-        k+=1
-print(s)
