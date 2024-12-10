@@ -1,0 +1,7 @@
+import math
+def gt(a):
+    t=math.factorial(a)
+    return t
+
+n=int(input())
+print(gt(n))
